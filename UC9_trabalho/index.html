@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Tela de Cadastro -->
+  <section id="cadastroScreen">
+    <form id="contactForm">
+      <h2>Cadastro</h2>
+      <label for="firstName">Nome:</label>
+      <input type="text" id="firstName" placeholder="Digite seu nome" required>
+      
+      <label for="lastName">Sobrenome:</label>
+      <input type="text" id="lastName" placeholder="Digite seu sobrenome" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Digite seu email" required>
+      
+      <label for="password">Senha:</label>
+      <input type="password" id="password" placeholder="Digite sua senha" required>
+      
+      <button type="submit">Cadastrar</button>
+    </form>
+  </section>
+
+  <!-- Tela de Sucesso -->
+  <section id="successScreen" style="display: none;">
+    <h2>Cadastro Realizado com Sucesso!</h2>
+    <p>Obrigado por se cadastrar. Siga as instruções que enviamos ao seu email para prosseguir</p>
+    <button id="backButton">Voltar</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
